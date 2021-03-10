@@ -9,42 +9,44 @@
 	flex - <grow> <shrink> <basis>
 	flex-direction - muda a direção que os elementos estão (row, column)
 	flex-order - muda a ordem do elemento indivualmente
-	justify-content - alinha os elementos no eixo principal
-	align-items - alinha os elementos no eixo secundário
+	justify-content - alinhamneto x (flex-start, flex-end, center, space-evenly, space-between, space-around)
+	align-items - alinha y (flex-start, flex-end, center, stretch)
 	align-self - alinha o elemento em particular
 
 */
 
 body {
-	background-color: #DDD;
+  background-color: #ddd;
 }
 
 .container {
-	display: flex;
-	width: 100%;
-	height: 300px;
-	background-color: #FFF;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  color: #fff;
 }
 
 .box {
-	height: 100px;
-	width: 100px;
-	/* flex: 1 1 300px; */
-	/* flex: <grow> <shrink> <basis>; */
+  height: 100px;
+  width: 100px;
+  /* flex: 1 1 300px; */
+  /* flex: <grow> <shrink> <basis>; */
 }
 
 .first {
-	background-color: red;
-	align-self: flex-start;
+  background-color: red;
+  align-self: flex-start;
 }
 
 .second {
-	background-color: green;
-	align-self: flex-end;
+  background-color: green;
+  align-self: flex-end;
 }
 
 .third {
-	background-color: blue;
+  background-color: blue;
 }
