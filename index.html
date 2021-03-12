@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>CSS3</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maxmum-scale=1, user-scalable=no">
+  <title>Instagram</title>
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<h1>Recursos CSS3</h1>
-<!-- 	<div class="animation-div"></div>
-	<div class="animation-div2"></div>
-	<div class="animation-div3"></div>
-	<div class="box" id="animation-div4">linear</div>
-	<div class="box" id="animation-div5">ease</div>
-	<div class="box" id="animation-div6">ease-in</div>
-	<div class="box" id="animation-div7">ease-out</div>
-	<div class="box" id="animation-div8">ease-in-out</div>
-	<div id="animation-div9"></div> -->
-<!-- 	<button class="btn">Enviar</button>
-	<div class="transition"></div> -->
-<!-- 	<div class="div-calc">
-		<div class="innerdiv-calc calc1"></div>
-		<div class="innerdiv-calc calc2"></div>
-		<div class="innerdiv-calc calc3"></div>
-		<div class="innerdiv-calc calc4"></div>
-	</div> -->
-<!-- 	<div class="gradient-box gradient1"></div>
-	<div class="gradient-box gradient2"></div>
-	<div class="gradient-box gradient3"></div>
-	<div class="gradient-box gradient4"></div>
-	<div class="gradient-box gradient5"></div>
-	<div class="gradient-box gradient6"></div> -->
-<!-- 	<div class="gradient-box gradient7"></div>
-	<div class="gradient-box gradient8"></div>
-	<div class="gradient-box gradient9"></div> -->
-	<!-- <h1 class="fontface">Esta fonte veio de um link externo.</h1> -->
-	<!-- <div class="mediaquery"></div> -->
-	<div class="div-border border-radius1"></div>
-	<div class="div-border border-radius2"></div>
+  <main>
+    <div id="main-container">
+      <!-- BANNER LATERAL -->
+      <div id="banner-container">
+        <img src="img/imagem_cel_exterior.png" alt="Crie uma conta no Instagram">
+      </div>
+      <!-- FORM DE LOGIN E REGISTRO -->
+      <div id="form-container">
+        <div id="form-box">
+          <img id="logo-insta" src="img/logo_instagram.png" alt="Instagram">
+          <form id="login-form">
+            <input type="text" name="username" placeholder="Telefone, nome de usuário ou email">
+            <input type="password" name="password" placeholder="Senha">
+            <input type="submit" value="Entrar">
+          </form>
+          <div class="separator">
+            <div class="line"></div>
+            <span>Ou</span>
+          </div>
+          <div id="other-links">
+            <div id="facebook-login">
+              <a href="#">
+                <img src="img/logo_facebook.svg" alt="Facebook">
+                <span>Entrar com o Facebook</span>
+              </a>
+            </div>
+            <div id="forgot-pass">
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+          </div>
+        </div>
+        <div id="register-container">
+          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </div>
+        <div id="get-app-container">
+          <p>Obtenha o aplicativo.</p>
+          <a href="#">
+            <img src="img/botao_apple.png" alt="Apple Store">
+          </a>
+          <a href="#">
+            <img src="img/botao_google_play.png" alt="Google Play">
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- RODAPÉ E LINKS DE NAVEGAÇÃO -->
+  <footer>
+    <nav>
+      <ul id="footer-links">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Imprensa</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Carreiras</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Localizações</a></li>
+        <li><a href="#">Contas mais relevantes</a></li>
+        <li><a href="#">Hashtags</a></li>
+        <li><a href="#">Idioma</a></li>
+      </ul>
+    </nav>
+    <p id="copyright">&copy; Instagram do Facebook</p>
+  </footer>
 </body>
 </html>
